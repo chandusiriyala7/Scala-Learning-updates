@@ -10,7 +10,7 @@ object MethodNotations extends App {
     def unary_! : String = s"$name, what is the problem"
 
     def isAlive : Boolean = true
-    
+
     def apply() : String = s"Hi my name is $name and i like $favouriteMovie"
 
   }
@@ -37,11 +37,11 @@ object MethodNotations extends App {
 
   //Postfix Notation
   println(mary.isAlive)
-  println(mary isAlive)
-  
-  //apply 
+   
+
+  //apply
   println(mary.apply())
   print(mary())
-  
+
 
 }
