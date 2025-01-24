@@ -37,11 +37,9 @@ object MethodNotations extends App {
 
   //Postfix Notation
   println(mary.isAlive)
-   
+
 
   //apply
   println(mary.apply())
   print(mary())
-
-
 }
