@@ -1,7 +1,7 @@
 package Lectures.part2oops
 
 object MethodNotationsExercises extends App {
-  
+
   /*
   1. Overload the + Operator 
       mary + "the rockstar " => new person  "Mary (the rockstar)"
@@ -17,7 +17,28 @@ object MethodNotationsExercises extends App {
    4.Overload the apply method
     mary.apply(2) => "Mary watched Inception 2 times"
    */
-}
+
+  class Person(val name: String, favouriteMovie: String , val age:Int = 0) {
+    def +(nickname : String) : Person = new Person(s"$name ($nickname)",favouriteMovie)
+    def apply() : String = s"Hi my name is $name and i like $favouriteMovie"
+    def unary_+ : Person =  new Person(name,favouriteMovie,age+1)
+    def apply(n : Int):String = s" $name watched $favouriteMovie $n times"
+    def learns (thing: String) = s"$name is learning $thing"
+
+    def learnsScala = this learns "Scala"
+  }
+
+  val mary = new Person("Mary", "Inception")
+
+  println((mary + "the Rockstar").apply())
+  println((+mary).age)
+  print(mary.learnsScala)
+  println(mary(10))
+
+
+  }
+
+
 
 
 
