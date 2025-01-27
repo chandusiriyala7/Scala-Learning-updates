@@ -1,9 +1,5 @@
 package Lectures.part2oops
 
-// 1. Define a Writer class within the package
-class Writer(val firstName: String, val lastName: String, val year: Int) {
-  def fullName: String = s"$firstName $lastName"
-}
 
 // 2. A Book class, also in the same package
 class Book(val title: String, val author: Writer, val yearPublished: Int)
@@ -12,10 +8,7 @@ class Book(val title: String, val author: Writer, val yearPublished: Int)
 package object part2oops {
   val genre = "Programming"
 
-  // A utility function inside package object to print book details
-  def printDetails(book: Book): Unit = {
-    println(s"Book Title: ${book.title}, Author: ${book.author.fullName}, Year Published: ${book.yearPublished}")
-  }
+
 }
 
 // 4. Main object to execute the application
