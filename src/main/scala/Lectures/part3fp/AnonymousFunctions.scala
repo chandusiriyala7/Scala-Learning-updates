@@ -32,4 +32,4 @@ object  AnonymousFunctions extends App {
   println(superAdd(3)(4))
 
 
-}
+}  
