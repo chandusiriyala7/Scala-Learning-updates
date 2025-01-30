@@ -25,4 +25,4 @@ object MapFlatmapFilterFor extends App {
   val name = "Scala"
   val doubleChars = name.flatMap(c => s"$c$c")
   println(doubleChars)
-}
+}  
